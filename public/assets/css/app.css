@@ -4,6 +4,7 @@
 	font-size: 6vw;
 
 }
+
 body{
 	background-image: url(/assets/images/main-bg.png);
 	background-repeat: no-repeat;
@@ -15,10 +16,10 @@ body{
 	overflow: hidden;
 }
 blockquote{
-	font-size: 8vw;
+	font-size: 7vw;
 	font-family: JQLaoSongJT,serif;
 	font-weight: 900;
-	line-height: 150%;
+	line-height: 130%;
 }
 b{
 	font-size: 12vw;
@@ -36,11 +37,12 @@ b{
 	margin:25% auto 5%;
 	word-wrap:break-word;
 	word-break:keep-all;
+	text-align: center;
 }
 .img-rigui{
 	width: 60%;
 	position: absolute;
-	bottom:16%;
+	bottom:18%;
 	left: 20%;
 }
 .main-mic{
@@ -48,12 +50,13 @@ b{
 }
 .main-mic img{
 	position: absolute;
-	width: 10%;
-	left: 45%;
+	width: 80%;
+	left: 10%;
 	bottom: 0%;
 }
 .main-wave{
 	position: absolute;
-	bottom: 0;
+	bottom: -4%;
+	width: 100%;
 }
 

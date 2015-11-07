@@ -11,9 +11,10 @@ p,span{
 }
 .btn-enter{
 	position: absolute;
-	width: 50%;
-	bottom:20%;
-	left: 30%;
+	overflow: hidden;
+	width: 70%;
+	bottom:5%;
+	left: 20%;
 }
 .btn-enter span{
 	border: 2px solid white;
@@ -27,12 +28,14 @@ body{
 }
 .img-gu{
 	position: relative;
-	top:100px;
 	left:50px;
+	width: 60%;
+	height:100%;
 	
 }
 .img-yaoyiyao{
-	position: absolute;
-	right: 0%;
-	bottom:0%;
+	position: relative;
+	left:50px;
+	width:15%;
+	height:20%;
 }

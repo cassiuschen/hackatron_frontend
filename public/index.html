@@ -9,18 +9,15 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" name="viewport" />
     <script>
       requirejs(['/assets/js/application.js'], function(app){
-        requirejs('app/index');
+        requirejs(['app/index']);
       });
     </script>
 </head>
-
-  <div class="btn-enter">
-
-   <!--  <a href="index.html">
-      <span>进入</span>
-    </a> -->
-    <img src="/assets/images/start-gu.png" class="img-gu">
-    <img src="/assets/images/start-yaoyiyao.png" class="img-yaoyiyao">
+  <div class="wrapper">
+    <div class="btn-enter">
+      <img src="/assets/images/start-gu.png" data-gif="/assets/images/start-gu.gif" class="img-gu">
+      <img src="/assets/images/start-yaoyiyao.png" class="img-yaoyiyao">
+    </div>
   </div>
 </body>
 </html>
