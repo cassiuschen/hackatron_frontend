@@ -192,6 +192,7 @@ gulp.task('watch', function() {
 
     // Watch .js files
     gulp.watch('src/javascripts/*.js', ['js']);
+    gulp.watch('src/javascripts/**/*.js', ['js']);
 
     // Watch .slim files
     gulp.watch('src/views/*.html', ['html']);
