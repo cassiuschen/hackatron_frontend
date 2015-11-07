@@ -1,0 +1,67 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+p,span,b{
+	font-family: serif;
+}
+p,span{
+	font-size: 8vw;
+}
+b{
+	font-size: 18vw;
+	font-weight: bold;
+}
+#graders{
+	font-size: 15vw;
+	font-weight: bold;
+}
+body{
+	background-image: url(/assets/images/result-bg.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	        background-size: cover;
+}
+.result-box{
+	position: absolute;
+	top:30%;
+	left: 10%;
+	text-align: center;
+}
+.play-again{
+	position: absolute;
+	bottom: 20%;
+	left:10%;
+}
+.play-again img{
+	width: 400px;
+	height: 180px;
+}
+.play-again span{
+	color: white;
+	font-size: 6vw;
+	position: absolute;
+	bottom: 30%;
+	left:16%;
+}
+
+.share{
+	position: absolute;
+	bottom: 20%;
+	left:54%;
+}
+.share img{
+	width: 400px;
+	height: 180px;
+}
+.share span{
+	color: white;
+	font-size: 6vw;
+	position: absolute;
+	bottom: 30%;
+	left:12%;
+}
