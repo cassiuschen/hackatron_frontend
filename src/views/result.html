@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>结果</title>
+  <link rel="stylesheet" href="/assets/css/result.css" />
+  
+    <script src="/assets/js/lib/modernizr.js"></script>
+    <script src="/assets/js/lib/require.js"></script>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" name="viewport" />
+    <script>
+      requirejs(['/assets/js/application.js'], function(app){
+        requirejs(['app/result']);
+      });
+    </script>
+</head>
+<body>
+   <div class="wrapper">
+      <div class="result-box">
+        <span>分数</span>
+        <b>99分</b>
+        <p>击败97%的小伙伴</p>
+        <p>你有当播音员的潜质哟~</p>
+        
+      </div>
+      <div class="play-again">
+          <img src="assets/images/result-btn.png">
+          <span><a href="index.html">再玩一次</a></span>
+      </div>
+      <div class="share">
+          <img src="assets/images/result-btn.png">
+          <span><a href="#">分享给好友</a></span>
+      </div>
+   </div>
+</body>
+</html>

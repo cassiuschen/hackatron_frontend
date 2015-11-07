@@ -1,3 +1,3 @@
-define(['jquery'], function($){
-	
+define(['jquery', 'wechatSetup'], function($, wx){
+	wx.setup();
 });
