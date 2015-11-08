@@ -46,15 +46,19 @@ define(['jquery', 'wechatSetup'], function($, wx){
         complete: function (res) {
             //alert(recordId);
             if (res.hasOwnProperty('translateResult')) {
-              var result = res.translateResult);
+              var result = res.translateResult;
               $.ajax({
                 type: 'GET',
-                url: ''
-              })
+                url: '//dev.cassiuschen.me/api/diff?sentence_id='+sentence._id+"&string="+result,
+                async: false,
+                dataType: "json",
+                success: function(result, _){
+                  window.location.href = '/result.html?rate='+parseInt(result.rate * 100);
+                }
+              });
             } else {
-              //alert('无法识别');
+              alert('无法识别，请重新录音~！');
             }
-            window.location.href = '/result.html?rate=97';
         }
       });
     }, 500);
