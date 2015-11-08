@@ -53,10 +53,10 @@ define(['jquery', 'wechatSetup'], function($, wx){
                 async: false,
                 contentType: "application/json",
                 dataType: "json",
-                data: {
+                data: JSON.stringify({
                   string: result,
                   sentence_id: sentence._id
-                },
+                }),
                 success: function(result, _){
                   alert(result.rate);
                   window.location.href = '/result.html?rate='+parseInt(result.rate * 100);
