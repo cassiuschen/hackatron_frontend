@@ -18,7 +18,7 @@ define(['jquery', 'wechat'], function($, wechat) {
       });
       console.log(data);
       wechat.config({
-        debug: false,
+        debug: true,
         appId: "wx80262218f360ebe9",
         timestamp: data.timestamp,
         nonceStr: 'wx80262218f360ebe9',
