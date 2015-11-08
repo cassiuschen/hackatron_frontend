@@ -40,7 +40,7 @@ define(['jquery', 'wechatSetup'], function($, wx){
     setTimeout(function(){
       window.wechat.translateVoice({
        localId: recordId, // 需要识别的音频的本地Id，由录音相关接口获得
-        isShowProgressTips: 1, // 默认为1，显示进度提示
+        isShowProgressTips: 0, // 默认为1，显示进度提示
         success: function (res) {
             alert(res.translateResult); // 语音识别的结果
         }
