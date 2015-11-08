@@ -7,6 +7,7 @@ define(['jquery', 'wechatSetup', 'hammer'], function($, wx, Hammer){
   // $('.main-mic').click(function(){
   //  $('.main-wave').show();
   // });
+
   var mic = new Hammer(document.getElementById('mic'));
   var recordId;
   mic.on('press', function() {

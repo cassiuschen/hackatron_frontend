@@ -1,13 +1,5 @@
-*{
-	padding: 0;
-	margin: 0;
-}
 a{
-	text-decoration: none;
 	color: white;
-}
-p,b{
-	font-family:serif;
 }
 p{
 	font-size: 6vw;
