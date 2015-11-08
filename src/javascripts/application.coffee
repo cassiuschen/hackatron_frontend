@@ -6,4 +6,5 @@ requirejs.config
 		underscore: 'lib/underscore'
 		wechat: '//res.wx.qq.com/open/js/jweixin-1.0.0'
 		wechatSetup: 'app/wechat.conf'
+		hammer: 'lib/hammer'
 

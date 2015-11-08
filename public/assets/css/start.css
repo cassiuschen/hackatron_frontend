@@ -1,6 +1,10 @@
+body {
+	overflow: hidden;
+}
 *{
 	padding: 0;
 	margin: 0;
+	transition: all .28s;
 }
 a{
 	text-decoration: none;
