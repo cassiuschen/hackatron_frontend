@@ -28,6 +28,13 @@ b{
 .wrapper{
 	width:100%;
 }
+
+.logo{
+	width: 12%;
+	position: absolute;
+	top:5%;
+	left: 44%;
+}
 .record-box{
 	margin-top: 20%;
 }

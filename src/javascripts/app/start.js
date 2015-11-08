@@ -1,20 +1,19 @@
 define(['jquery', 'wechatSetup'], function($, wx){
 	wx.setup();
-	// window.onload(function(){
-	// 	$('.main-wave').hide();
-	// }
-	// $('.main-mic').click(function(){
-	// 	$('.main-wave').show();
-	// });
+	$('.main-mic').click(function(){
+		$('.main-wave').show();
+		$('.main-mic').hide();
+	});
+	$('.main-wave').hide();
 	function touches(event){
 		if(event.touch.length == 1){
 			 switch(event.type){
 			 	case 'touchstart':
-			 		$('.main-wave').fadeIn();
- 					$('.main-mic').fadeOut();
+			 		$('.main-wave').show();
+ 					$('.main-mic').hide();
  					break;
  				case 'touchend':
- 					$('.main-wave').fadeOut();
+ 					$('.main-wave').hide();
  					window.location.href ="result.html"
 			 }
 		}
