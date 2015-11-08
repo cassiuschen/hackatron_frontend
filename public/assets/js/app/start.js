@@ -42,6 +42,7 @@ define(['jquery', 'wechatSetup'], function($, wx){
        localId: recordId, // 需要识别的音频的本地Id，由录音相关接口获得
         isShowProgressTips: 0, // 默认为1，显示进度提示
         complete: function (res) {
+            alert(recordId);
             if (res.hasOwnProperty('translateResult')) {
               alert('识别结果：' + res.translateResult);
             } else {
