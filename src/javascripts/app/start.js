@@ -42,11 +42,11 @@ define(['jquery', 'wechatSetup'], function($, wx){
       window.wechat.translateVoice({
        localId: recordId, 
         complete: function (res) {
-            alert(recordId);
+            //alert(recordId);
             if (res.hasOwnProperty('translateResult')) {
               alert('识别结果：' + res.translateResult);
             } else {
-              alert('无法识别');
+              //alert('无法识别');
             }
             window.location.href = '/result.html?rate=97';
         }

@@ -8,7 +8,7 @@ define(['jquery', 'wechatSetup'], function($, wx){
 	});
 
 	var score = window.location.href.split("?")[1].split("=")[1];
-	result.text(score);
+	result.text(score + "分");
 
 	$('btn').click(function(){
 		window.wechat.startRecord();
