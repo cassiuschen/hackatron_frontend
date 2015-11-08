@@ -23,7 +23,7 @@ define(['jquery', 'wechat'], function($, wechat) {
         timestamp: data.timestamp,
         nonceStr: 'wx80262218f360ebe9',
         signature: data.signature,
-        jsApiList: ["startRecord", "stopRecord", "onVoiceRecordEnd", "playVoice", "pauseVoice", "stopVoice", "onVoicePlayEnd", "uploadVoice", "onMenuShareTimeline"]
+        jsApiList: ["startRecord", "stopRecord", "onVoiceRecordEnd", "playVoice", "pauseVoice", "stopVoice", "onVoicePlayEnd", "uploadVoice", "translateVoice", "onMenuShareTimeline"]
       });
       return wechat.ready(function() {
         window.wechat = wechat;

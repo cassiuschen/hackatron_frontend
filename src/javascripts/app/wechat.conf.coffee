@@ -26,7 +26,8 @@ define ['jquery', 'wechat'], ($, wechat) ->
         "pauseVoice",
         "stopVoice",
         "onVoicePlayEnd",
-        "uploadVoice"
+        "uploadVoice",
+        "translateVoice",
         "onMenuShareTimeline"
       ]
 
