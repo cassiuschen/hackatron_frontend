@@ -1,12 +1,15 @@
 
 define(['jquery', 'wechatSetup'], function($, wx){
   wx.setup();
-  // window.onload(function(){
-  //  $('.main-wave').hide();
-  // }
-  // $('.main-mic').click(function(){
-  //  $('.main-wave').show();
-  // });
+
+  $.ajax({
+    type: "GET",
+    url: "//dev.cassiuschen.me/api/random.json",
+    dataType: "json",
+    success: function(result, _){
+      $('.main-text').html('<blockquote><b>"</b>'+result.content+'<b>"</b></blockquote>');
+    }
+  })
   var mic = $('#mic');
   var recordId;
   var translate = function(Id) {
@@ -31,7 +34,7 @@ define(['jquery', 'wechatSetup'], function($, wx){
     window.wechat.stopRecord({
       complete: function (res) {
           recordId = res.localId;
-          $('#mic').css('background-image','url(/assets/images/start-bg.png)');
+          $('#mic').css('background-image','url(/assets/images/mic.gif)');
           translate(recordId);
         }
     });
