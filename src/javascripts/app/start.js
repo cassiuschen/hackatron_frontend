@@ -58,7 +58,6 @@ define(['jquery', 'wechatSetup'], function($, wx){
                   sentence_id: sentence._id
                 }),
                 success: function(result, _){
-                  alert(result.rate);
                   window.location.href = '/result.html?rate='+parseInt(result.rate);
                 }
               });
