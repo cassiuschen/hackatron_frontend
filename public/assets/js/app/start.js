@@ -59,7 +59,7 @@ define(['jquery', 'wechatSetup'], function($, wx){
                 }),
                 success: function(result, _){
                   alert(result.rate);
-                  window.location.href = '/result.html?rate='+parseInt(result.rate * 100);
+                  window.location.href = '/result.html?rate='+parseInt(result.rate);
                 }
               });
             } else {
