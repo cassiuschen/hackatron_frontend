@@ -1,10 +1,11 @@
 define(['jquery', 'wechatSetup'], function($, wx){
-  wx.setup();
+
 
   $.ajax({
     type: "GET",
     url: "//dev.cassiuschen.me/api/random.json",
     dataType: "json",
+    async:true,
     success: function(result, _){
       $('.main-text').html('<blockquote><b>"</b>'+result.content+'<b>"</b></blockquote>');
     }

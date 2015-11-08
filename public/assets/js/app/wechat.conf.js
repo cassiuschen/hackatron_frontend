@@ -11,7 +11,7 @@ define(['jquery', 'wechat'], function($, wechat) {
         url: "//dev.cassiuschen.me/wechat/sign?url=" + window.location.href,
         contentType: "application/json",
         dataType: "json",
-        async: false,
+        async: true,
         success: function(result, _) {
           return data = result;
         }
@@ -23,7 +23,7 @@ define(['jquery', 'wechat'], function($, wechat) {
         timestamp: data.timestamp,
         nonceStr: 'wx80262218f360ebe9',
         signature: data.signature,
-        jsApiList: ["startRecord", "stopRecord", "onVoiceRecordEnd", "playVoice", "pauseVoice", "stopVoice", "onVoicePlayEnd", "uploadVoice"]
+        jsApiList: ["startRecord", "stopRecord", "onVoiceRecordEnd", "playVoice", "pauseVoice", "stopVoice", "onVoicePlayEnd", "uploadVoice", "onMenuShareTimeline"]
       });
       return wechat.ready(function() {
         window.wechat = wechat;
