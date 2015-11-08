@@ -41,8 +41,12 @@ define(['jquery', 'wechatSetup'], function($, wx){
       window.wechat.translateVoice({
        localId: recordId, // 需要识别的音频的本地Id，由录音相关接口获得
         isShowProgressTips: 0, // 默认为1，显示进度提示
-        success: function (res) {
-            alert(res.translateResult); // 语音识别的结果
+        complete: function (res) {
+            if (res.hasOwnProperty('translateResult')) {
+              alert('识别结果：' + res.translateResult);
+            } else {
+              alert('无法识别');
+            }
         }
       });
     }, 500);
