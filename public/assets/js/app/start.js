@@ -48,10 +48,15 @@ define(['jquery', 'wechatSetup'], function($, wx){
             if (res.hasOwnProperty('translateResult')) {
               var result = res.translateResult;
               $.ajax({
-                type: 'GET',
-                url: '//dev.cassiuschen.me/api/diff?sentence_id='+sentence._id+"&string="+result,
+                type: 'POST',
+                url: '//dev.cassiuschen.me/api/diff',
                 async: false,
+                contentType: "application/json",
                 dataType: "json",
+                data: {
+                  string: result,
+                  sentence_id: sentence._id
+                },
                 success: function(result, _){
                   alert(result.rate);
                   window.location.href = '/result.html?rate='+parseInt(result.rate * 100);
