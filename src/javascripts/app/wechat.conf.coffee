@@ -6,14 +6,14 @@ define ['jquery', 'wechat'], ($, wechat) ->
       url: "//dev.cassiuschen.me/wechat/sign?url=#{window.location.href}"
       contentType: "application/json"
       dataType: "json"
-      async: false
+      async: true
       success: (result, _) ->
         data = result
 
     console.log data
 
     wechat.config
-      debug: true
+      debug: false
       appId: "wx80262218f360ebe9"
       timestamp: data.timestamp
       nonceStr: 'wx80262218f360ebe9'
@@ -27,6 +27,7 @@ define ['jquery', 'wechat'], ($, wechat) ->
         "stopVoice",
         "onVoicePlayEnd",
         "uploadVoice"
+        "onMenuShareTimeline"
       ]
 
     wechat.ready ->

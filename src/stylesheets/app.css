@@ -10,12 +10,14 @@ body{
 	width:100%;
 }
 blockquote{
-	font-size: 7vw;
+
+	font-size: 22px;
+	font-family: JQLaoSongJT,serif;
 	font-weight: 900;
 	line-height: 130%;
 }
 b{
-	font-size: 12vw;
+	font-size: 24px;
 	font-weight: bolder;
 	font-family: Arial,serif;
 }
