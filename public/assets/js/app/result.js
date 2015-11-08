@@ -7,6 +7,9 @@ define(['jquery', 'wechatSetup'], function($, wx){
 		result.addClass('bounceIn');
 	});
 
+	var score = window.location.href.split("?")[1].split("=")[1];
+	result.text(score);
+
 	$('btn').click(function(){
 		window.wechat.startRecord();
 	})

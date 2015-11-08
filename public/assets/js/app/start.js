@@ -48,6 +48,7 @@ define(['jquery', 'wechatSetup'], function($, wx){
             } else {
               alert('无法识别');
             }
+            window.location.href = '/result.html?rate=97';
         }
       });
     }, 500);
