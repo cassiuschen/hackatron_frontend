@@ -1,12 +1,14 @@
 define(['jquery', 'wechatSetup'], function($, wx){
 
   wx.setup();
+  var sentence;
   $.ajax({
     type: "GET",
     url: "//dev.cassiuschen.me/api/random.json",
     dataType: "json",
     async:true,
     success: function(result, _){
+      sentence = result;
       $('.main-text').html('<blockquote><b>"</b>'+result.content+'<b>"</b></blockquote>');
     }
   })
@@ -44,7 +46,11 @@ define(['jquery', 'wechatSetup'], function($, wx){
         complete: function (res) {
             //alert(recordId);
             if (res.hasOwnProperty('translateResult')) {
-              alert('识别结果：' + res.translateResult);
+              var result = res.translateResult);
+              $.ajax({
+                type: 'GET',
+                url: ''
+              })
             } else {
               //alert('无法识别');
             }
