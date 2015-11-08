@@ -9,6 +9,7 @@ body{
 	background-image: url(/assets/images/main-bg.png);
 	background-repeat: no-repeat;
 	background-size: cover;
+	overflow: hidden;
 	/*background-position: 0%,10%;*/
 }
 .wrapper{
@@ -45,6 +46,15 @@ b{
 	left: 20%;
 }
 .main-mic{
+ width: 100%;
+ height: 100%;
+ display: block;
+ position: absolute;
+ bottom: 0;
+ background-image: url(/assets/images/mic.gif);
+ background-size: auto 100%;
+ background-position: center;
+ background-repeat: no-repeat;
 
 }
 .main-mic img{
