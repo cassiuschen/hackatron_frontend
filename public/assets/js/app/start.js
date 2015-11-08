@@ -9,6 +9,15 @@ define(['jquery', 'wechatSetup'], function($, wx){
   // });
   var mic = $('#mic');
   var recordId;
+  var translate = function(Id) {
+    window.wechat.translateVoice({
+       localId: Id, // 需要识别的音频的本地Id，由录音相关接口获得
+        isShowProgressTips: 1, // 默认为1，显示进度提示
+        success: function (res) {
+            alert(res.translateResult); // 语音识别的结果
+        }
+    });
+  };
   mic.on('touchstart', function() {
     window.wechat.startRecord({
       success: function(){
@@ -19,18 +28,14 @@ define(['jquery', 'wechatSetup'], function($, wx){
     console.log("press");
   });
   mic.on('touchend', function(){
-    alert("YOOOOO!");
     window.wechat.stopRecord({
       complete: function (res) {
           recordId = res.localId;
-          window.wechat.translateVoice({
-             localId: recordId, // 需要识别的音频的本地Id，由录音相关接口获得
-              isShowProgressTips: 1, // 默认为1，显示进度提示
-              success: function (res) {
-                  alert(res.translateResult); // 语音识别的结果
-              }
-          });
+          $('#mic').css('background-image','url(/assets/images/start-bg.png)');
+          translate(recordId);
         }
     });
   });
+
+
 });
