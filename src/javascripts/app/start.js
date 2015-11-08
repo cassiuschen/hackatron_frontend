@@ -53,6 +53,7 @@ define(['jquery', 'wechatSetup'], function($, wx){
                 async: false,
                 dataType: "json",
                 success: function(result, _){
+                  alert(result.rate);
                   window.location.href = '/result.html?rate='+parseInt(result.rate * 100);
                 }
               });
