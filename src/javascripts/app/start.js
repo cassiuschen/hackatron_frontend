@@ -20,8 +20,7 @@ define(['jquery', 'wechatSetup'], function($, wx){
   });
   mic.on('touchend', function(){
     alert("YOOOOO!");
-    window.wechat.onVoiceRecordEnd({
-        // 录音时间超过一分钟没有停止的时候会执行 complete 回调
+    window.wechat.stopRecord({
       complete: function (res) {
           recordId = res.localId;
           window.wechat.translateVoice({
