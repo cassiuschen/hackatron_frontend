@@ -11,7 +11,7 @@ define(['jquery', 'wechat'], function($, wechat) {
         url: "//dev.cassiuschen.me/wechat/sign?url=" + window.location.href,
         contentType: "application/json",
         dataType: "json",
-        async: true,
+        async: false,
         success: function(result, _) {
           return data = result;
         }

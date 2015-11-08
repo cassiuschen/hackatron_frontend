@@ -1,6 +1,6 @@
 define(['jquery', 'wechatSetup'], function($, wx){
 
-
+  wx.setup();
   $.ajax({
     type: "GET",
     url: "//dev.cassiuschen.me/api/random.json",
