@@ -1,4 +1,3 @@
-
 define(['jquery', 'wechatSetup'], function($, wx){
   wx.setup();
 
@@ -38,6 +37,7 @@ define(['jquery', 'wechatSetup'], function($, wx){
           translate(recordId);
         }
     });
+    translate(recordId);
   });
 
 
